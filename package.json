@@ -8,7 +8,8 @@
 		"n8n-community-node-package"
 	],
 	"author": {
-		"name": "KimiyiAI"
+		"name": "KimiyiAI",
+		"email": "support@kimiyi.ai"
 	},
 	"repository": {
 		"type": "git",
