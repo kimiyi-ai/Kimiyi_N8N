@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-kimiyiai",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "connect your N8N with Kimiyi!",
 	"license": "MIT",
 	"homepage": "https://github.com/kimiyi-ai/Kimiyi_N8N#readme",
