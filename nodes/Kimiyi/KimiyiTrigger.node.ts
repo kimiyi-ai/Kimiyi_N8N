@@ -1,5 +1,5 @@
 import type { INodeType, INodeTypeDescription, ITriggerFunctions } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { ApplicationError, NodeConnectionTypes } from 'n8n-workflow';
 
 export class KimiyiTrigger implements INodeType {
 	description: INodeTypeDescription = {
@@ -55,6 +55,7 @@ export class KimiyiTrigger implements INodeType {
 				placeholder: 'e.g. 5m or 1h',
 			},
 		],
+		usableAsTool: true,
 	};
 
 	async trigger(this: ITriggerFunctions) {
@@ -74,7 +75,7 @@ export class KimiyiTrigger implements INodeType {
 		const url = endpoints[operation];
 
 		if (!url) {
-			throw new Error(`Unsupported operation: ${operation}`);
+			throw new ApplicationError(`Unsupported operation: ${operation}`);
 		}
 
 		const runOnce = async () => {

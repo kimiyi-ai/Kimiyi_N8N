@@ -1,18 +1,19 @@
 import {
 	ICredentialType,
-	NodePropertyTypes,
+	INodeProperties,
 } from 'n8n-workflow';
 
 export class KimiyiApi implements ICredentialType {
 	name = 'kimiyiApi';
 	displayName = 'Kimiyi API';
-	documentationUrl = ''; // optional, can leave blank
-	properties = [
+	documentationUrl = 'https://example.com/docs'; // optional, can leave blank
+	properties: INodeProperties[] = [
 		{
 			displayName: 'API Key',
 			name: 'apiKey',
-			type: 'string' as NodePropertyTypes,
+			type: 'string',
 			default: '',
+			typeOptions: { password: true },
 		},
 	];
 }

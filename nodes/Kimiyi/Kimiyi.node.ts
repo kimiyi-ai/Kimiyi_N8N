@@ -232,11 +232,12 @@ export class Kimiyi implements INodeType {
 			},
 
 		],
+		usableAsTool: true,
 	};
 
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 
-		let returnItems: INodeExecutionData[] = [];
+		const returnItems: INodeExecutionData[] = [];
 
 		const itemIndex = 0;
 		const operation = this.getNodeParameter('operation', itemIndex) as string;

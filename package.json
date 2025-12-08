@@ -1,19 +1,19 @@
 {
-	"name": "n8n-nodes-<...>",
+	"name": "n8n-nodes-kimiyiAI",
 	"version": "0.1.0",
-	"description": "",
+	"description": "connect your N8N with Kimiyi!",
 	"license": "MIT",
 	"homepage": "",
 	"keywords": [
 		"n8n-community-node-package"
 	],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "KimiyiAI",
+		"email": "support@kimiyi.ai"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/<...>/n8n-nodes-<...>.git"
+		"url": "https://github.com/kimiyi-ai/Kimiyi_N8N.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
