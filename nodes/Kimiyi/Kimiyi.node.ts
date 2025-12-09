@@ -264,7 +264,7 @@ export class Kimiyi implements INodeType {
 
 			const response = await this.helpers.httpRequest({
 				method: 'POST',
-				url: 'https://internalwebapi-dev.kimiyi.ai/api/N8N/UploadFile',
+				url: 'https://internalwebapi.kimiya.ai/api/N8N/UploadFile',
 				headers: {
 					'Content-Type': 'application/json',
 					'X-API-KEY': apiKey,
